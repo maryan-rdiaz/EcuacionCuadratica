@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcuacionCuadratica.AcercaDe"
+             Title="Acerca De...">
+    <ScrollView>
+        <VerticalStackLayout Padding="30,50" Spacing="20" HorizontalOptions="Center" 
+                             VerticalOptions="Center">
+
+            <!-- Nombre de la aplicación -->
+            <Label
+                Text="Nombre de la aplicación:"
+                FontAttributes="Bold" />
+            <Label
+                Text="Ecuación Cuadrática" />
+
+            <!-- Número de versión -->
+            <Label
+                Text="Versión:"
+                FontAttributes="Bold" />
+            <Label
+                Text="1.0.0" />
+
+            <!-- Fecha de programación -->
+            <Label
+                Text="Fecha de programación:"
+                FontAttributes="Bold" />
+            <Label
+                Text="28 de Octubre de 2024" />
+
+            <!-- Datos personales -->
+            <Label
+                Text="Datos personales:"
+                FontAttributes="Bold" />
+            <Label
+                Text="Nombre: Ana Lilia Espejel" />
+            <Label
+                Text="Matrícula: " />
+
+            <Label
+                Text="Materia:" />
+
+            <!-- Figura académica -->
+            <Label
+                Text="Figura académica:"
+                FontAttributes="Bold" />
+            <Label
+                Text="[Nombre de la Figura Académica]" />
+
+            <!-- Botón para salir -->
+            <Button
+                Text="Salir"
+                Clicked="OnSalirClicked"
+                HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcuacionCuadratica.CalcularRaices"
+             Title="CalcularRaices">
+    
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+    
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+            <Label
+                Text="CALCULO DE RAICES"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            <Image
+                Source="formulageneral.jpg"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="Descripcion de la imagen:" />
+
+            <!-- Campos de entrada para a, b y c -->
+            <Label Text="Valor de a:" />
+            <Entry x:Name="entryA" Keyboard="Numeric" Placeholder="Ingresa el valor de a" />
+
+            <Label Text="Valor de b:" />
+            <Entry x:Name="entryB" Keyboard="Numeric" Placeholder="Ingresa el valor de b" />
+
+            <Label Text="Valor de c:" />
+            <Entry x:Name="entryC" Keyboard="Numeric" Placeholder="Ingresa el valor de c" />
+
+            <!-- Botón para calcular -->
+            <Button
+                Text="Calcular"
+                Clicked="OnCalcularClicked" />
+
+            <!-- Resultados de X1 y X2 -->
+            <Label Text="Resultado X1:" />
+            <Label x:Name="labelX1" Text="   " FontAttributes="Bold" />
+
+            <Label Text="Resultado X2:" />
+            <Label x:Name="labelX2" Text="   " FontAttributes="Bold" />
+
+            <!-- Botón para salir -->
+            <Button
+                Text="Salir"
+                Clicked="OnSalirClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
